@@ -58,6 +58,14 @@
      justify-content: space-between;
  }
 
+ .logo-container {
+     display: flex;
+ }
+
+ .img-logo {
+     margin-right: 4px;
+ }
+
  .logo-header {
      font-family: 'Epilogue';
      font-style: normal;
