@@ -1,0 +1,209 @@
+ /* ЗАГАЛЬНЕ  */
+
+ h1,
+ h2,
+ h3,
+ h4,
+ p {
+     margin-top: 0;
+     margin-bottom: 0;
+ }
+
+ ul {
+     margin-top: 0;
+     margin-bottom: 0;
+     padding-left: 0;
+ }
+
+ button {
+     cursor: pointer;
+ }
+
+ .list {
+     list-style: none;
+ }
+
+ .link {
+     text-decoration: none;
+ }
+
+ img {
+     display: block;
+ }
+
+ .is-hidden {
+     transform: translateX(100%);
+ }
+
+ body {
+     margin: 0;
+ }
+
+ /* Стилі HEADER */
+
+ .page-header {
+     padding-top: 29px;
+     padding-bottom: 29px;
+     padding-left: 20px;
+     padding-right: 20px;
+     background-color: #141414;
+ }
+
+ .container-header {
+     max-width: 335px;
+     margin-left: auto;
+     margin-right: auto;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+
+ .logo-header {
+     font-family: 'Epilogue';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 15px;
+     line-height: 1.0;
+     letter-spacing: -0.03em;
+     color: #FFFFFF;
+ }
+
+ .menu-header {
+     display: none;
+ }
+
+ .adress-tel {
+     display: none;
+ }
+
+ .menu-header-link {
+     font-family: 'Epilogue';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 9px;
+     line-height: 1.33;
+     text-transform: uppercase;
+     color: #FFFFFF;
+ }
+
+ .tel-header {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 159px;
+     height: 48px;
+     background-color: #1E2827;
+     border-radius: 8px;
+     font-family: 'Epilogue';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 9px;
+     line-height: 1.33;
+     text-transform: uppercase;
+     color: #FFFFFF;
+ }
+
+ .mobile-menu-open {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 0;
+     width: 24px;
+     height: 24px;
+     background-color: transparent;
+     border: none;
+ }
+
+ @media screen and (min-width: 768px) {
+     .page-header {
+         padding-top: 20px;
+         padding-bottom: 20px;
+     }
+
+     .container-header {
+         max-width: 704px;
+     }
+
+     .cont-logo-nav {
+         display: flex;
+     }
+
+     .logo-header {
+         margin-right: 80px;
+     }
+
+     .menu-header {
+         display: flex;
+         gap: 40px;
+     }
+
+     .adress-tel {
+         display: block;
+     }
+
+     .mobile-menu-open {
+         display: none;
+     }
+ }
+
+ @media screen and (min-width: 1280px) {
+     .container-header {
+         max-width: 1176px;
+     }
+
+ }
+
+ /* МОБІЛЬНЕ МЕНЮ */
+ .mobile-menu {
+     position: fixed;
+     width: 100vw;
+     height: 100vh;
+     top: 0;
+     left: 0;
+     background-color: #1E2827;
+     padding-top: 29px;
+     z-index: 20;
+     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ .mob-header {
+     max-width: 335px;
+     padding-left: 20px;
+     padding-right: 20px;
+     margin-left: auto;
+     margin-right: auto;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 200px;
+ }
+
+ .mobile-menu-close {
+     background-color: transparent;
+     border: none;
+     padding: 0;
+     line-height: 0;
+ }
+
+ .mob-nav {
+     display: block;
+     width: 63px;
+     text-align: center;
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+ .item-mob:not(:last-child) {
+     margin-bottom: 14px;
+ }
+
+ .link-mob {
+     font-family: 'Epilogue';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 1.28;
+     letter-spacing: -0.02em;
+     text-transform: uppercase;
+     color: #FFFFFF;
+ }
